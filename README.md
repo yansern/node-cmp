@@ -1,11 +1,11 @@
-cmp - A library for general comparisons
+# cmp - A library for general comparisons
 
-REQUIREMENTS
+## REQUIREMENTS
 
- - Node.js
+ - [Node.js](http://nodejs.org/)
  - [hashkeys](http://search.npmjs.org/#/hashkeys)
 
-EXAMPLES
+## EXAMPLES
 
 	> var cmp = require("cmp");
 	> cmp.cmp(1, 1);
