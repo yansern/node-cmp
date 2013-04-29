@@ -22,7 +22,7 @@ function cmp(a, b) {
   else if (aType > bType) {
     return 1;
   }
-  else if (aType == Object) {
+  else if (aType === Object) {
     var
     aKeys = hashkeys.keys(a),
     bKeys = hashkeys.keys(b),
@@ -59,13 +59,13 @@ function cmp(a, b) {
 exports.cmp = cmp;
 
 function lt(a, b) {
-  return cmp(a, b) == -1;
+  return cmp(a, b) === -1;
 }
 
 exports.lt = lt;
 
 function gt(a, b) {
-  return cmp(a, b) == 1;
+  return cmp(a, b) === 1;
 }
 
 exports.gt = gt;
@@ -83,13 +83,13 @@ function neq(a, b) {
 exports.neq = neq;
 
 function lte(a, b) {
-  return cmp(a, b) != 1;
+  return cmp(a, b) !== 1;
 }
 
 exports.lte = lte;
 
 function gte(a, b) {
-  return cmp(a, b) != -1;
+  return cmp(a, b) !== -1;
 }
 
 exports.gte = gte;
@@ -97,13 +97,13 @@ exports.gte = gte;
 function test() {
   return (
     cmp(1, 1) === 0 &&
-      cmp(1, 2) == -1 &&
-      cmp(2, 1) == 1 &&
-      cmp(1, "1") == -1 &&
+      cmp(1, 2) === -1 &&
+      cmp(2, 1) === 1 &&
+      cmp(1, "1") === -1 &&
       cmp([1, 2], [1, 2]) === 0 &&
-      cmp(true, 1) == -1 &&
-      cmp({a:1}, {a:1, b:2, c:3}) == -1 &&
-      cmp({a:1}, true) == 1 &&
+      cmp(true, 1) === -1 &&
+      cmp({a:1}, {a:1, b:2, c:3}) === -1 &&
+      cmp({a:1}, true) === 1 &&
 
     lt(1, 2) &&
       !lt(2, 1) &&
