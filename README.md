@@ -10,6 +10,7 @@
 Checkout the code, and install the dependencies:
 
     $ git clone https://github.com/mcandre/node-cmp.git
+    $ cd node-cmp
     $ npm install
 
 # Linting
