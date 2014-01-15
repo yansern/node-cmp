@@ -17,6 +17,10 @@
     > cmp.lte([1,2], [1,2,3]);
     true
 
+# HOMEPAGE
+
+https://github.com/mcandre/node-cmp
+
 # REQUIREMENTS
 
 * [Node.js](http://nodejs.org/)
