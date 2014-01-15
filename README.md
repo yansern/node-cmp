@@ -3,18 +3,12 @@
 # EXAMPLE
 
     $ npm install
-    > var cmp = require("./cmp");
-    > cmp.cmp(1, 1);
+    node example.js 
     0
-    > cmp.cmp(1, 2);
     -1
-    > cmp.cmp(2, 1);
     1
-    > cmp.cmp(1, [1,2,3]);
     1
-    > cmp.eq([1,2,3], [1,2,3]);
     true
-    > cmp.lte([1,2], [1,2,3]);
     true
 
 # HOMEPAGE
