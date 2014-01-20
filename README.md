@@ -2,8 +2,11 @@
 
 # EXAMPLE
 
-    $ npm install
-    node example.js 
+    $ npm test
+
+    > cmp@0.0.2 test /Users/andrew/Desktop/src/node-cmp
+    > node example.js
+
     0
     -1
     1
