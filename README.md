@@ -1,5 +1,9 @@
 # cmp - A library for general comparisons
 
+# INSTALL
+
+    $ npm install cmp
+
 # EXAMPLE
 
     $ npm test
@@ -28,8 +32,11 @@ https://github.com/mcandre/node-cmp
 * [Bundler](http://bundler.io/)
 * [Cucumber](http://cukes.info/)
 * [Guard](http://guardgem.org/)
+* [aspelllint](https://github.com/mcandre/aspelllint)
 
-# TESTING
+# DEVELOPMENT
+
+## Test
 
 Ensure the example script works as expected:
 
@@ -45,21 +52,24 @@ Ensure the example script works as expected:
     2 steps (2 passed)
     0m0.057s
 
+## Lint
+
+Keep the code tidy:
+
+    $ npm run-script lint
+
+## Spell Check
+
+    $ aspelllint
+    ...
+
+## Local CI
+
 Guard can automatically run testing when the code changes:
 
     $ bundle
     $ guard -G Guardfile-cucumber
     ...
-
-# INSTALL
-
-    $ npm install cmp
-
-# LINT
-
-Keep the code tidy:
-
-    $ npm run-script lint
 
 Guard can automatically lint when the code changes:
 
