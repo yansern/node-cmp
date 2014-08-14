@@ -5,12 +5,12 @@ end
 Then(/^the output is correct for each test$/) do
   lines = @cucumber.split("\n")
 
-  lines.length.should == 10
+  expect(lines.length).to eq(10)
 
-  lines[-6].should == '0'
-  lines[-5].should == '-1'
-  lines[-4].should == '1'
-  lines[-3].should == '1'
-  lines[-2].should == 'true'
-  lines[-1].should == 'true'
+  expect(lines[-6]).to eq('0')
+  expect(lines[-5]).to eq('-1')
+  expect(lines[-4]).to eq('1')
+  expect(lines[-3]).to eq('1')
+  expect(lines[-2]).to eq('true')
+  expect(lines[-1]).to eq('true')
 end
