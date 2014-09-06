@@ -6,7 +6,7 @@
 
 # EXAMPLE
 
-    $ npm test
+    $ grunt test
 
     > cmp@0.0.2 test /Users/andrew/Desktop/src/node-cmp
     > node example.js
@@ -40,8 +40,7 @@ https://github.com/mcandre/node-cmp
 
 Ensure the example script works as expected:
 
-    $ bundle
-    $ cucumber
+    $ grunt cucumber
     Feature: Run example tests
 
       Scenario: Running example tests            # features/run_example_tests.feature:3
@@ -56,12 +55,11 @@ Ensure the example script works as expected:
 
 Keep the code tidy:
 
-    $ npm run-script lint
+    $ grunt lint
 
 ## Spell Check
 
-    $ aspelllint
-    ...
+    $ grunt aspelllint
 
 ## Local CI
 
