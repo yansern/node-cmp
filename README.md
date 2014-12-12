@@ -2,21 +2,25 @@
 
 # INSTALL
 
-    $ npm install cmp
+```
+$ npm install cmp
+```
 
 # EXAMPLE
 
-    $ grunt test
+```
+$ grunt test
 
-    > cmp@0.0.2 test /Users/andrew/Desktop/src/node-cmp
-    > node example.js
+> cmp@0.0.2 test /Users/andrew/Desktop/src/node-cmp
+> node example.js
 
-    0
-    -1
-    1
-    1
-    true
-    true
+0
+-1
+1
+1
+true
+true
+```
 
 # HOMEPAGE
 
@@ -24,7 +28,7 @@ https://github.com/mcandre/node-cmp
 
 # REQUIREMENTS
 
-* [Node.js](http://nodejs.org/)
+* [Node.js](http://nodejs.org/) 0.8+
 
 ## Optional
 
