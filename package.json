@@ -7,10 +7,7 @@
     "url": "git://github.com/mcandre/node-cmp.git"
   },
   "author": "Andrew Pennebaker <andrew.pennebaker@gmail.com> (http://www.yellosoft.us/)",
-  "main": "cmp",
-  "directories": {
-    "lib": "."
-  },
+  "main": "lib/cmp.js",
   "engines": {
     "node": ">=0.8"
   },

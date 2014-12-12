@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var cmp = require("./cmp");
+var cmp = require("./lib/cmp");
 
 console.log(cmp.cmp(1, 1));
 console.log(cmp.cmp(1, 2));
