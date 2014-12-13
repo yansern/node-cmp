@@ -1,11 +1,5 @@
 # cmp - A library for general comparisons
 
-# INSTALL
-
-```
-$ npm install cmp
-```
-
 # EXAMPLE
 
 ```
@@ -41,6 +35,16 @@ Done, without errors.
 # HOMEPAGE
 
 https://github.com/mcandre/node-cmp
+
+# NPM
+
+https://www.npmjs.com/package/cmp
+
+# INSTALL
+
+```
+$ npm install cmp
+```
 
 # REQUIREMENTS
 
