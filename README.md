@@ -1,35 +1,28 @@
 # cmp - A library for general comparisons
 
+A comparison library for arbitrarily deep structures
+
 # EXAMPLE
 
 ```
-$ grunt test
-Running "exec:test" (exec) task
-
-> cmp@0.0.2 test /Users/andrew/Desktop/src/node-cmp
-> mocha
-
-
-
-  cmp
-    cmp
-      ✓ should handle booleans 
-      ✓ should handle integers 
-      ✓ should handle doubles 
-      ✓ should handle strings 
-      ✓ should handle arrays 
-    eq
-      ✓ should handle booleans 
-      ✓ should handle integers 
-      ✓ should handle doubles 
-      ✓ should handle strings 
-      ✓ should handle arrays 
-
-
-  10 passing (8ms)
-
-
-Done, without errors.
+$ node
+> var cmp = require("cmp");
+> cmp.cmp([1, 2, 3], [1, 2, 3]);
+0
+> cmp.eq([1, 2, 3], [1, 2, 3]);
+true
+> cmp.cmp([1, 2, 3], [1, 2, 3, 4]);
+-1
+> cmp.eq([1, 2, 3], [1, 2, 3, 4]);
+false
+> cmp.cmp("abc", "abc");
+0
+> cmp.eq("abc", "abc");
+true
+> cmp.cmp("abc", "abcdef");
+-1
+> cmp.eq("abc", "abcdef");
+false
 ```
 
 # HOMEPAGE
@@ -39,12 +32,6 @@ https://github.com/mcandre/node-cmp
 # NPM
 
 https://www.npmjs.com/package/cmp
-
-# INSTALL
-
-```
-$ npm install cmp
-```
 
 # REQUIREMENTS
 
