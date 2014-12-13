@@ -10,16 +10,32 @@ $ npm install cmp
 
 ```
 $ grunt test
+Running "exec:test" (exec) task
 
 > cmp@0.0.2 test /Users/andrew/Desktop/src/node-cmp
-> node example.js
+> mocha
 
-0
--1
-1
-1
-true
-true
+
+
+  cmp
+    cmp
+      ✓ should handle booleans 
+      ✓ should handle integers 
+      ✓ should handle doubles 
+      ✓ should handle strings 
+      ✓ should handle arrays 
+    eq
+      ✓ should handle booleans 
+      ✓ should handle integers 
+      ✓ should handle doubles 
+      ✓ should handle strings 
+      ✓ should handle arrays 
+
+
+  10 passing (8ms)
+
+
+Done, without errors.
 ```
 
 # HOMEPAGE

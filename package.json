@@ -12,10 +12,11 @@
     "node": ">=0.8"
   },
   "scripts": {
-    "test": "node example.js",
+    "test": "mocha",
     "lint": "jshint ."
   },
   "dependencies": {
+    "mocha": "~1.21.4",
     "hashkeys": "0.0.1"
   },
   "devDependencies": {
