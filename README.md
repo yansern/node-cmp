@@ -50,7 +50,6 @@ https://github.com/mcandre/node-cmp
 
 * [Ruby](https://www.ruby-lang.org/) 2+
 * [Bundler](http://bundler.io/)
-* [Cucumber](http://cukes.info/)
 * [Guard](http://guardgem.org/)
 * [aspelllint](https://github.com/mcandre/aspelllint)
 
@@ -58,19 +57,11 @@ https://github.com/mcandre/node-cmp
 
 ## Test
 
-Ensure the example script works as expected:
+Ensure the logic is correct:
 
 ```
-$ grunt cucumber
-Feature: Run example tests
-
-  Scenario: Running example tests            # features/run_example_tests.feature:3
-    Given the program has finished           # features/step_definitions/steps.rb:1
-    Then the output is correct for each test # features/step_definitions/steps.rb:5
-
-1 scenario (1 passed)
-2 steps (2 passed)
-0m0.057s
+$ grunt test
+...
 ```
 
 ## Lint
@@ -93,7 +84,7 @@ Guard can automatically run testing when the code changes:
 
 ```
 $ bundle
-$ guard -G Guardfile-cucumber
+$ guard -G Guardfile
 ...
 ```
 
