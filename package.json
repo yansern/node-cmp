@@ -12,8 +12,7 @@
     "node": ">=0.8"
   },
   "scripts": {
-    "test": "mocha",
-    "lint": "jshint ."
+    "test": "mocha"
   },
   "dependencies": {
     "mocha": "~1.21.4",
