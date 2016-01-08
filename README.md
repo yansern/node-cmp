@@ -39,7 +39,7 @@ https://www.npmjs.com/package/cmp
 
 ## Optional
 
-* [Ruby](https://www.ruby-lang.org/) 2+
+* [Ruby](https://www.ruby-lang.org/) 2.3+
 * [Bundler](http://bundler.io/)
 * [Guard](http://guardgem.org/)
 * [aspelllint](https://github.com/mcandre/aspelllint)
